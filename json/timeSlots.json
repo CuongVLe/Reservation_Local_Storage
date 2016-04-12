@@ -1,0 +1,60 @@
+{
+  "id":1,
+  "name":"Awesome Restaurant",
+  "timeSlots": [
+    {
+      "StartTime":"10:00AM",
+      "EndTime":"11:00AM",
+      "SeatsAvailable": 5
+    },
+    {
+      "StartTime":"11:00AM",
+      "EndTime":"12:00PM",
+      "SeatsAvailable": 5
+    },
+    {
+      "StartTime":"12:00PM",
+      "EndTime":"1:00PM",
+      "SeatsAvailable": 5
+    },
+    {
+      "StartTime":"1:00PM",
+      "EndTime":"2:00PM",
+      "SeatsAvailable":3
+    },
+    {
+      "StartTime":"2:00PM",
+      "EndTime":"3:00PM",
+      "SeatsAvailable": 5
+    },
+    {
+      "StartTime":"3:00PM",
+      "EndTime":"4:00PM",
+      "SeatsAvailable": 8
+    },
+    {
+      "StartTime":"4:00PM",
+      "EndTime":"5:00PM",
+      "SeatsAvailable": 9
+    },
+    {
+      "StartTime":"5:00PM",
+      "EndTime":"6:00PM",
+      "SeatsAvailable": 6
+    },
+    {
+      "StartTime":"6:00PM",
+      "EndTime":"7:00PM",
+      "SeatsAvailable": 3
+    },
+    {
+      "StartTime":"7:00PM",
+      "EndTime":"8:00PM",
+      "SeatsAvailable": 1
+    },
+    {
+      "StartTime":"8:00PM",
+      "EndTime":"9:00PM",
+      "SeatsAvailable": 9
+    }]
+}

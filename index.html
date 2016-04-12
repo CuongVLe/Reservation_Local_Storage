@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Restaurant Reservation</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="vendor/bootstrap-datepicker/css/bootstrap-datepicker3.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="well container" style="margin-top:50px;">
+      <div class="row">
+          <div class='col-sm-4'>
+              <div class="form-group">
+                  <div class='input-group date' id='datetimepicker1'>
+                      <label for="txtDate">Date</label>
+                      <input type='text' id="txtDate" class="datepicker form-control" />
+                  </div>
+              </div>
+          </div>
+          <div class='col-sm-4'>
+              <div class="form-group">
+                  <div class='input-group'>
+                    <label for="ddlTimeSlots">Time</label>
+                    <select class="form-control" id="ddlTimeSlots" disabled="true">
+                    </select>
+                  </div>
+              </div>
+          </div>
+          <div class='col-sm-4'>
+              <div class="form-group">
+                  <div class='input-group'>
+                      <label for="txtAvailableSeats">Available Seats</label>
+                      <input type='text' id="txtAvailableSeats" class="form-control" readonly="readonly"/>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-sm-8">
+            <button type="button" id="btnConfirm" class="btn btn-primary" data-toggle="modal" data-target="#confirmationModal">Confirm</button>
+          </div>
+          <div class="col-sm-4">
+            <button type="button" id="btnReset" class="btn btn-primary" data-toggle="modal" data-target="#resetModal" title="For demonstration purposes, rest local storage data">Reset Data</button>
+          </div>
+      </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="confirmationModal" tabindex="-1" role="dialog" aria-labelledby="confirmationModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="confirmationModalLabel">Reservation Confirmation</h4>
+        </div>
+        <div id="confirmationModelContent" class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal" id="btnOK">OK</button>
+        </div>   
+      </div>
+    </div>
+  </div>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
